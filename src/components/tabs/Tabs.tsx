@@ -4,98 +4,99 @@ import React from "react";
 
 const TabContent = () => {
   return (
-    <div className="flex md:justify-center md:items-center w-full relative md:left-48 top-48">
-      <Tabs className="w-2/3 md:w-full" defaultValue="about">
-        <TabsList className="grid w-full grid-cols-3 justify-center h-12">
-          <TabsTrigger className="h-10" defaultValue="about" value="about">
-            <User className="mr-2 h-4 w-4" /> About
+    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 sm:pt-12 pt-2 pb-8">
+      <Tabs defaultValue="about" className="w-full">
+        <TabsList className="grid w-full grid-cols-3 h-12">
+          <TabsTrigger
+            value="about"
+            className="flex items-center justify-center space-x-2 h-10"
+          >
+            <User className="h-4 w-4" />
+            <span className="hidden sm:inline">About</span>
           </TabsTrigger>
-          <TabsTrigger className="h-10" value="experience">
-            <Briefcase className="mr-2 h-4 w-4" /> Experience
+          <TabsTrigger
+            value="experience"
+            className="flex items-center justify-center space-x-2 h-10"
+          >
+            <Briefcase className="h-4 w-4" />
+            <span className="hidden sm:inline">Experience</span>
           </TabsTrigger>
-          <TabsTrigger className="h-10" value="education">
-            <GraduationCap className="mr-2 h-4 w-4" /> Education
+          <TabsTrigger
+            value="education"
+            className="flex items-center justify-center space-x-2 h-10"
+          >
+            <GraduationCap className="h-4 w-4" />
+            <span className="hidden sm:inline">Education</span>
           </TabsTrigger>
         </TabsList>
+
         <TabsContent value="about">
-          <div className="w-full rounded-lg border-gray-800 border-2 md:h-48 h-auto mt-12">
-            <div className="flex flex-row gap-x-4">
-              <div className="flex flex-col gap-y-2 w-1/2 ml-4 mt-4">
-                <h1 className="text-2xl font-bold">About Me</h1>
-                <span className="font-medium">
+          <div className="mt-10 rounded-lg border-2 border-gray-800 p-6">
+            <div className="flex flex-col lg:flex-row gap-8">
+              <div className="lg:w-1/2">
+                <h1 className="text-2xl font-bold mb-4">About Me</h1>
+                <p className="text-base sm:text-lg">
                   I am a front-end developer with more than three years of
                   experience in building responsive, user-friendly applications
                   using React.js, Next.js, TypeScript, Tailwind CSS, and Redux.
-                  I’m highly skilled in delivering high-quality code and enjoy
+                  I'm highly skilled in delivering high-quality code and enjoy
                   collaborating with teams to drive innovative solutions.
-                  Passionate about continuous learning, I’m committed to making
+                  Passionate about continuous learning, I'm committed to making
                   a positive impact in every project I work on.
-                </span>
+                </p>
               </div>
-              <div className="grid grid-cols-3 mt-8 ml-10">
-                <div>
-                  <ul className="list-disc">
+
+              <div className="lg:w-1/2 xl:ml-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <ul className="list-disc list-inside space-y-2">
                     <li>React/Next.js</li>
                     <li>TypeScript</li>
                     <li>Tailwind CSS</li>
                     <li>Redux</li>
-                    <li>Ant Desing</li>
-                  </ul>
-                </div>
-                <div className="ml-14">
-                  <ul className="list-disc">
+                    <li>Ant Design</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Github</li>
-                    <li>Github</li>
+                    <li>JavaScript</li>
+                    <li>GitHub</li>
+                    <li>Git</li>
                   </ul>
-                </div>
-                <div className="ml-28">
-                  <ul className="list-disc">
+                  <ul className="list-disc list-inside space-y-2 -mt-4 sm:mt-0">
                     <li>Lodash</li>
                     <li>Agile</li>
-                    <li>I18n</li>
-                    <li>Eslint</li>
+                    <li>i18n</li>
+                    <li>ESLint</li>
                     <li>Django</li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>
         </TabsContent>
         <TabsContent value="experience">
-          <div className="w-full rounded-lg border-gray-800 border-2 md:h-80 h-auto mt-12">
-            <div className="mt-4 ml-4">
-              <h1 className="text-2xl font-bold">Experience</h1>
-              <div className="border-l-2 border-gray-700 h-24 mt-6 space-y-2">
-                <h2 className="text-xl font-bold ml-3">
-                  React/Next js Developer
-                </h2>
-                <span className="text-lg font-medium ml-3">
-                  Private Company
-                </span>
-                <h2 className="text-base font-medium ml-3">3.5 Years</h2>
+          <div className="mt-10 rounded-lg border-2 border-gray-800 p-6">
+            <h1 className="text-2xl font-bold mb-6">Experience</h1>
+            <div className="space-y-8">
+              <div className="relative pl-6 border-l-2 border-gray-700">
+                <h2 className="text-xl font-bold">React/Next.js Developer</h2>
+                <p className="text-lg mt-2">Private Company</p>
+                <p className="text-base mt-1">3.5 Years</p>
               </div>
-              <div className="border-l-2 border-gray-700 h-24 mt-8 space-y-2">
-                <h2 className="text-xl font-bold ml-3">React/Next js Intern</h2>
-                <span className="text-lg font-medium ml-3">
-                  Private Company
-                </span>{" "}
-                <h2 className="text-base font-medium ml-3">3 Month</h2>
+
+              <div className="relative pl-6 border-l-2 border-gray-700">
+                <h2 className="text-xl font-bold">React/Next.js Intern</h2>
+                <p className="text-lg mt-2">Private Company</p>
+                <p className="text-base mt-1">3 Months</p>
               </div>
             </div>
           </div>
         </TabsContent>
         <TabsContent value="education">
-          <div className="w-full rounded-lg border-gray-800 border-2 md:h-48 h-auto mt-12">
-            <div className="mt-4 ml-4">
-              <h1 className="text-2xl font-bold">Education</h1>
-              <div className="border-l-2 border-gray-700 h-24 mt-6 space-y-2">
-                <h2 className="text-xl font-bold ml-3">Computer Bachlor</h2>
-                <span className="text-lg font-medium ml-3">BIHE</span>
-                <h2 className="text-base font-medium ml-3">4 Years</h2>
-              </div>
+          <div className="mt-10 rounded-lg border-2 border-gray-800 p-6">
+            <h1 className="text-2xl font-bold mb-6">Education</h1>
+            <div className="relative pl-6 border-l-2 border-gray-700">
+              <h2 className="text-xl font-bold">Computer Bachelor</h2>
+              <p className="text-lg mt-2">BIHE</p>
+              <p className="text-base mt-1">4 Years</p>
             </div>
           </div>
         </TabsContent>
