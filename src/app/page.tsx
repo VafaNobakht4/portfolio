@@ -1,10 +1,11 @@
 import ProfileTitles from "@/components/ProfileTitles";
 import ProfilePicture from "@/components/ProfilePicture";
 import TabContent from "@/components/tabs/Tabs";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-background">
+    <div className="min-h-screen w-full bg-black">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-32">
         <div className="pt-8 sm:pt-12 lg:pt-16">
           {/* Profile Section */}

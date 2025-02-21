@@ -4,8 +4,8 @@ import profilePic from "../assets/10.jpg";
 
 const ProfilePicture = () => {
   return (
-    <div className="h-64 w-1/3 flex flex-col items-center justify-center">
-      <div className="relative w-64 h-64">
+    <div className="h-80 w-1/3 flex flex-col items-center justify-center">
+      <div className="relative w-80 h-80">
         <Image
           alt="Profile"
           src={profilePic}
