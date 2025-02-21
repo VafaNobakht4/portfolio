@@ -8,7 +8,6 @@ export default function Home() {
     <div className="min-h-screen w-full bg-black">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-32">
         <div className="pt-8 sm:pt-12 lg:pt-16">
-          {/* Profile Section */}
           <div className="flex flex-col items-center sm:items-start sm:flex-row gap-6 sm:gap-8 lg:gap-12">
             <div className="w-full sm:w-auto flex justify-center lg:pl-36 md:pl-10 sm:pl-5">
               <ProfilePicture />
@@ -17,8 +16,6 @@ export default function Home() {
               <ProfileTitles />
             </div>
           </div>
-
-          {/* Tabs Section */}
           <div className="mt-8 sm:mt-12 lg:mt-16">
             <TabContent />
           </div>
