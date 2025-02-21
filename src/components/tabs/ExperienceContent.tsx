@@ -14,7 +14,7 @@ const ExperienceContent = () => {
         </div>
 
         <div className="relative pl-6 border-l-2 border-gray-700">
-          <h2 className="text-xl font-bold text-white">React/Next.js Intern</h2>
+          <h2 className="text-xl font-bold text-white">React js Intern</h2>
           <p className="text-lg mt-2 text-white">Private Company</p>
           <p className="text-base mt-1 text-white">3 Months</p>
         </div>
