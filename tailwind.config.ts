@@ -12,6 +12,7 @@ export default {
       colors: {
         general: {
           1: "#1c1c1c",
+          2: "#cfcaca",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
