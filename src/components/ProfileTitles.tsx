@@ -1,4 +1,5 @@
 import React from "react";
+import ProfileButtons from "./ProfileButtons";
 
 const ProfileTitles = () => {
   return (
@@ -13,6 +14,7 @@ const ProfileTitles = () => {
         Front End Developer | React.js & Next.js Specialist with more than 4
         years.
       </h1>
+      <ProfileButtons />
     </div>
   );
 };
