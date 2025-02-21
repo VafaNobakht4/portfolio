@@ -14,6 +14,9 @@ const ProfileTitles = () => {
         Front End Developer | React.js & Next.js Specialist with more than 4
         years.
       </h1>
+      <h1 className="text-lg md:text-xl font-medium mb-4 text-general-2">
+        Vafa.nobakht4@gmail.com
+      </h1>
       <ProfileButtons />
     </div>
   );
