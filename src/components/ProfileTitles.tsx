@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
 import ProfileButtons from "./ProfileButtons";
+import { motion } from "framer-motion";
 
 const ProfileTitles = () => {
   return (
-    <div className="flex flex-col gap-y-2 md:w-full w-3/4 mt-6 ml-10">
+    <motion.div
+      className="flex flex-col gap-y-2 md:w-full w-3/4 mt-6 ml-10"
+      initial={{ x: "100vh", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
         Vafa Nobakht
       </h1>
@@ -18,7 +25,7 @@ const ProfileTitles = () => {
         Vafa.nobakht4@gmail.com
       </h1>
       <ProfileButtons />
-    </div>
+    </motion.div>
   );
 };
 

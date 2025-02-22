@@ -1,8 +1,15 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ExperienceContent = () => {
   return (
-    <div className="mt-10 rounded-lg border-2 border-gray-800 p-6">
+    <motion.div
+      className="mt-10 rounded-lg border-2 border-gray-800 p-6"
+      initial={{ x: "-100vh", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="text-2xl font-bold mb-6 text-white">Experience</h1>
       <div className="space-y-8">
         <div className="relative pl-6 border-l-2 border-gray-700">
@@ -19,7 +26,7 @@ const ExperienceContent = () => {
           <p className="text-base mt-1 text-white">3 Months</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

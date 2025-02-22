@@ -1,11 +1,17 @@
+"use client";
 import React from "react";
 import { Button } from "./ui/button";
 import { Download, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 const ProfileButtons = () => {
   return (
-    <div className="flex flex-row gap-x-4">
+    <motion.div
+      className="flex flex-row gap-x-4"
+      initial={{ x: "100vh", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Link href="./VafaNobakht_Resume.pdf" download="Vafa_Nobakht_CV.pdf">
         <Button
           className="w-48 h-12 text-lg text-white font-semibold mt-2 bg-black border border-white hover:hover:bg-general-1 hover:text-white"
@@ -40,7 +46,7 @@ const ProfileButtons = () => {
           <Linkedin className="!h-6 !w-6 !mt-3.5" />
         </Button>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

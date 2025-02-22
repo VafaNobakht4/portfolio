@@ -1,13 +1,20 @@
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Briefcase, GraduationCap, User } from "lucide-react";
 import React from "react";
 import EducationContent from "./EducationContent";
 import ExperienceContent from "./ExperienceContent";
 import AboutContent from "./AboutContent";
+import { motion } from "framer-motion";
 
 const TabContent = () => {
   return (
-    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 sm:pt-6 pt-2 pb-8">
+    <motion.div
+      className="w-full mx-auto px-4 sm:px-6 lg:px-8 sm:pt-6 pt-2 pb-8"
+      initial={{ x: "-100vh", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Tabs defaultValue="about" className="w-full">
         <TabsList className="grid w-full grid-cols-3 h-12 bg-[#1c1a1a] text-white opacity-100">
           <TabsTrigger
@@ -42,7 +49,7 @@ const TabContent = () => {
           <EducationContent />
         </TabsContent>
       </Tabs>
-    </div>
+    </motion.div>
   );
 };
 
