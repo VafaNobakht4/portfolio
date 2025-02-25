@@ -12,7 +12,11 @@ const ProfileButtons = () => {
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <Link href="./VafaNobakht_Resume.pdf" download="Vafa_Nobakht_CV.pdf">
+      <Link
+        href="./VafaNobakht-Resume.pdf"
+        download="Vafa_Nobakht_CV.pdf"
+        target="_blank"
+      >
         <Button
           className="w-48 h-12 text-lg text-white font-semibold mt-2 bg-black border border-white hover:hover:bg-general-1 hover:text-white"
           variant="outline"

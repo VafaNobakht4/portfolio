@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portoflio",
+  title: "Vafa's Portoflio",
 };
 
 export default function RootLayout({

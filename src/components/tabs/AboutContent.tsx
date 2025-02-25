@@ -11,7 +11,7 @@ const AboutContent = () => {
     >
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="lg:w-1/2">
-          <h1 className="text-2xl font-bold mb-4 text-white">About Me</h1>
+          <h1 className="text-3xl font-bold mb-6 text-white">About Me</h1>
           <p className="text-base sm:text-lg text-white">
             I am a front-end developer with more than four years of experience
             in building responsive, user-friendly applications using React.js,
