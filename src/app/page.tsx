@@ -2,6 +2,7 @@ import ProfileTitles from "@/components/ProfileTitles";
 import ProfilePicture from "@/components/ProfilePicture";
 import TabContent from "@/components/tabs/Tabs";
 import "./globals.css";
+import { LoaderCircle } from "lucide-react";
 
 export default function Home() {
   return (
