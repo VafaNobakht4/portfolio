@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ProfileButtons = () => {
   return (
     <motion.div
-      className="flex items-center gap-4 -ml-5"
+      className="flex items-center gap-4 -ml-5 sm:ml-0"
       initial={{ x: "100vh", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
