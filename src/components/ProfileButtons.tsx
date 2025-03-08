@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ProfileButtons = () => {
   return (
     <motion.div
-      className="flex items-center gap-4"
+      className="flex items-center gap-4 -ml-5"
       initial={{ x: "100vh", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ const ProfileButtons = () => {
       <Button
         asChild
         variant="ghost"
-        className="text-white ml-2 py-6 hover:bg-general-1 hover:text-white"
+        className="text-white py-6 hover:bg-general-1 hover:text-white"
       >
         <Link
           href="https://github.com/VafaNobakht4/"
@@ -42,7 +42,7 @@ const ProfileButtons = () => {
 
       <Button
         variant="ghost"
-        className="text-white py-6 ml-2 hover:bg-general-1 hover:text-white"
+        className="text-white py-6 hover:bg-general-1 hover:text-white"
       >
         <Link
           href="https://www.linkedin.com/in/vafa-nobakht/"
